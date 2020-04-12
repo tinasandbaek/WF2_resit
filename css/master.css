@@ -1,0 +1,145 @@
+/* core style */
+body{
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #333;
+  color: #fff;
+  font-size: 1.1em;
+  line-height: 1.5;
+  text-align: center;
+}
+
+img{
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+
+p{
+  margin: 2%;
+  padding: 3em 0;
+}
+
+.btnone{
+  display: inline-block;
+  background: #333;
+  color: #fff;
+  text-decoration: none;
+  padding: 1em 2em;
+  border: 1px solid #666;
+  margin: .5em 0;
+}
+
+.btnone:hover {
+  background: #eaeaea;
+  color: #333;
+}
+
+/* header showcase*/
+
+#showcase {
+  min-height: 450px;
+  color: #fff;
+  text-align: center;
+}
+
+#showcase .bg-image {
+  position: absolute;
+  background: #333
+    url("https://images.pexels.com/photos/240834/pexels-photo-240834.jpeg?auto=compress&cs=tinysrgb&h=650&w=940");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 450px;
+  z-index: -1;
+  opacity: 0.3;
+}
+
+#showcase h1 {
+  padding-top: 100px;
+  padding-bottom: 0;
+}
+
+#showcase .conten-wrap,
+#section-a .conten-wrap {
+  padding: 0 1.5em;
+}
+
+/* section one */
+
+#section-a {
+  background: #eaeaea;
+  color: #333;
+  padding-bottom: 2em;
+}
+
+/* section two */
+#section-b {
+  padding: 2em 1em 1em
+}
+
+#section-b ul {
+  list-style: none;
+  margin: 0;
+  padding:0;
+}
+
+#section-b li {
+  margin-bottom: 1em;
+  background: #fff;
+  color: #333;
+}
+
+.card-content {
+  padding: 1.5em;
+}
+
+/*section three */
+
+#section-C {
+  background: #fff;
+  color: #333;
+  padding:2em
+}
+
+/* section four / boxes */
+
+#section-d .box {
+  padding: 2em;
+  color: #fff;
+}
+
+#section-d .box:first-child {
+  background: #2690d4;
+}
+
+/* footer */
+
+#main-footer {
+  padding: 2em;
+  background: #000;
+  color: #fff;
+  text-align: center;
+}
+
+#main-footer a {
+  color: #2690d4;
+  text-decoration: none;
+}
+
+
+/* media Queries */
+
+@media(min-width: 700px) {
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr repeat(2, minmax(auto, 25em)) 1fr;
+  }
+  .content-wrap,
+  #section-b ul{
+    grid-column: 2/4;
+  }
+
+}
